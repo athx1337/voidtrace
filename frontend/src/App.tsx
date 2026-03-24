@@ -251,9 +251,12 @@ export default function App() {
       <div className="flex-1 p-4 md:p-8 max-w-3xl mx-auto w-full">
 
         {/* Header */}
-        <div className="flex justify-between text-[10px] opacity-30 mb-5">
-          <span>VOIDTRACE // IP INTELLIGENCE TOOL v1.0</span>
-          <span>0TRACE SUITE</span>
+        <div className="flex justify-between items-center mb-5 border-b border-[#00ff9c]/10 pb-3">
+          <div className="flex items-center gap-4">
+            <img src="/owl.png" alt="owl logo" className="h-12 w-auto opacity-90 drop-shadow-[0_0_8px_rgba(0,255,156,0.4)]" />
+            <span className="text-[10px] opacity-40">VOIDTRACE // IP INTELLIGENCE TOOL v1.0</span>
+          </div>
+          <span className="text-[10px] opacity-30">0TRACE SUITE</span>
         </div>
 
         {/* ASCII banner */}
