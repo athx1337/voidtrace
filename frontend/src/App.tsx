@@ -196,7 +196,8 @@ export default function App() {
     setErrorMsg("");
 
     try {
-      const r = await fetch("http://localhost:8001/api/lookup", {
+      const apiUrl = import.meta.env.VITE_API_URL || "https://voidtrace-production.up.railway.app";
+      const r = await fetch(`${apiUrl}/api/lookup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ip: ip.trim() }),
